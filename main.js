@@ -24,20 +24,20 @@ const testimonialsList = [
     name: "David",
     message:
       "The UI/UX improvements they made to our app were game-changing. It's now much more intuitive and engaging for our users. Working with them was a breeze, and we couldn't be happier with the outcome",
-    url: "img/1.jpg",
+    url: "/img/1.jpg",
   },
   {
     name: "Mary ",
     message:
       "The website they designed for us is clean, user-friendly, and visually stunning. It's made a huge difference in our online presence, and we've seen a significant increase in traffic and conversions. Highly recommended!",
-    url: "img/2.jpg",
+    url: "/img/2.jpg",
   },
 
   {
     name: "Alex",
     message:
       "Their digital marketing strategies are spot on. They helped us reach our target audience effectively, and our online sales have skyrocketed. Their team is responsive and knowledgeable. Great results!",
-    url: "img/3.jpg",
+    url: "/img/3.jpg",
   },
 ];
 
