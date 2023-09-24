@@ -1,0 +1,288 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  h1 {
+    font-size: 4.4rem;
+  }
+
+
+}
+
+@media (max-width : 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .container {
+    max-width: 110rem;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .grid-4--col {
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+
+
+
+  .grid-3--col {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.4rem;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+
+  .hero-img-box .hero-img {
+    width: 50%;
+  }
+
+  .hero-img-box::before {
+    width: 40%;
+    height: 80%;
+  }
+
+  .hero-img-box::after {
+
+    width: 30%;
+    height: 60%;
+  }
+
+
+  @keyframes scaleCircle1 {
+    0% {
+
+      width: 20%;
+      height: 30%;
+    }
+
+    30% {
+
+      width: 25%;
+      height: 40%;
+    }
+
+    60% {
+
+      width: 30%;
+      height: 50%;
+    }
+
+    100% {
+
+      width: 40%;
+      height: 80%;
+    }
+  }
+
+  @keyframes scaleCircle {
+    0% {
+
+      width: 0%;
+      height: 30%;
+    }
+
+
+    100% {
+
+      width: 30%;
+      height: 60%;
+    }
+  }
+
+  .hero-overlay-img {
+    width: 50%;
+    top: 10%;
+    left: 30%;
+
+  }
+
+  .nav-links,
+  .nav-link {
+    display: none;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+  }
+
+
+  .hero-text-box p {
+    margin-bottom: 2.4rem;
+  }
+
+}
+
+/**************************/
+/* BELOW 844px (Smaller tablets) */
+/**************************/
+
+
+@media (max-width : 52em) {
+
+  .grid {
+    column-gap: 3.2rem;
+    row-gap: 6.4rem;
+  }
+
+  .grid-3--col {
+    grid-template-columns: 1fr 1fr;
+    gap: 4.8rem;
+  }
+
+  footer {
+    padding-bottom: 4.8rem;
+  }
+
+}
+
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+
+  .heading-secondary {
+    font-size: 3.2rem;
+  }
+
+  .gap-col-sm {
+    column-gap: 2.4rem !important;
+  }
+
+  .grid-2--col {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .services-card:nth-child(even) {
+    transform: translateX(30px);
+  }
+
+  .grid-4--col {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3.2rem;
+    row-gap: 5.2rem;
+  }
+
+  .container {
+    max-width: 70rem;
+  }
+
+  .about-img-box img {
+    width: 70%;
+    margin-inline: auto;
+  }
+
+  .about-img-box::after {
+    width: 40%;
+    top: 40%;
+    left: 28%;
+  }
+
+  .heading-cta {
+    font-size: 2.4rem;
+  }
+
+  .grid-3--col {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .container {
+    max-width: 90%;
+  }
+
+  .services-card:nth-child(even) {
+    transform: translateX(0px);
+  }
+
+
+  .about-img-box img {
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .about-img-box::after {
+    width: 80%;
+    top: 40%;
+    left: 40%;
+  }
+
+
+
+  .testimonial-container {
+    width: 100%;
+  }
+
+  .section-tesimonials .bubble {
+    position: absolute;
+    right: -115px;
+    top: 127px;
+  }
+
+  .section-tesimonials .bubble-1 {
+    position: absolute;
+    left: -115px;
+    top: 127px;
+  }
+
+
+  .grid-4--col {
+    grid-template-columns: 1fr;
+
+    row-gap: 5.2rem;
+  }
+
+  .project-card:last-child {
+    grid-column: 1;
+  }
+
+  footer .footer-form .input-form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  footer .footer-form .input-form input {
+    width: 100%;
+  }
+}

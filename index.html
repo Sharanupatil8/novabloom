@@ -22,6 +22,9 @@
     <!--css styles-->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -33,13 +36,18 @@
           <li><a href="#" class="nav-link">Services</a></li>
           <li><a href="#" class="nav-link">Projects</a></li>
           <li><a href="#" class="nav-link">Testimonials</a></li>
+          <li><a href="#" class="nav-link btn-blue">Contact us</a></li>
         </ul>
-        <a href="#" class="nav-link btn-blue">Contact us</a>
       </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <main>
       <section class="section-hero">
-        <div class="hero">
+        <div class="hero" data-aos="zoom-in" data-aos-duration="1500">
           <div class="hero-text-box">
             <h3></h3>
             <h1>Where <span id="element"> </span> Fuels Your Growth</h1>
@@ -67,13 +75,24 @@
       <section class="section-about">
         <div class="container">
           <div class="grid grid-2--col">
-            <div class="about-img-box">
+            <div
+              class="about-img-box"
+              class="about-text-box"
+              data-aos="fade-left"
+              data-aos-offset="500"
+              data-aos-duration="1000"
+            >
               <img
                 src="img/about-us.png"
                 alt="person-front-computer-working-html"
               />
             </div>
-            <div class="about-text-box">
+            <div
+              class="about-text-box"
+              data-aos="fade-right"
+              data-aos-offset="500"
+              data-aos-duration="1000"
+            >
               <span class="subheading">About us</span>
               <h2 class="heading-secondary">
                 We Bring <span class="primary-color">Creative</span> ideas to
@@ -105,7 +124,12 @@
           </h2>
 
           <div class="grid grid-2--col pb-big">
-            <div class="services-card">
+            <div
+              class="services-card"
+              data-aos="zoom-in-up"
+              data-aos-offset="500"
+              data-aos-duration="1000"
+            >
               <span><ion-icon class="icon" name="desktop"></ion-icon></span>
               <h3 class="heading-tertiary">1. Web Development</h3>
               <p class="services-text">
@@ -114,7 +138,12 @@
                 realities.
               </p>
             </div>
-            <div class="services-card">
+            <div
+              class="services-card"
+              data-aos="zoom-in-up"
+              data-aos-offset="500"
+              data-aos-duration="1000"
+            >
               <span><ion-icon name="bulb" class="icon"></ion-icon></span>
               <h3 class="heading-tertiary">2. UX/UI Development</h3>
               <p class="services-text">
@@ -124,7 +153,12 @@
               </p>
             </div>
 
-            <div class="services-card">
+            <div
+              class="services-card"
+              data-aos="zoom-up-down"
+              data-aos-offset="500"
+              data-aos-duration="1000"
+            >
               <span><ion-icon name="aperture" class="icon"></ion-icon></span>
               <h3 class="heading-tertiary">3. Graphic Design</h3>
               <p class="services-text">
@@ -134,7 +168,12 @@
               </p>
             </div>
 
-            <div class="services-card">
+            <div
+              class="services-card"
+              data-aos="zoom-in-up"
+              data-aos-offset="500"
+              data-aos-duration="1000"
+            >
               <span><ion-icon class="icon" name="today"></ion-icon></span>
               <h3 class="heading-tertiary">4. Digital Marketing</h3>
               <p class="services-text">
@@ -155,7 +194,11 @@
           </h2>
 
           <div class="grid grid-4--col">
-            <div class="project-card">
+            <div
+              class="project-card"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <div class="project-img-box">
                 <img src="img/Landing-Page (1).webp" />
               </div>
@@ -182,7 +225,11 @@
                 ></span>
               </a>
             </div>
-            <div class="project-card">
+            <div
+              class="project-card"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <div class="project-img-box box-2">
                 <img src="img/penguinkart.webp" />
               </div>
@@ -206,7 +253,11 @@
                 ></span>
               </a>
             </div>
-            <div class="project-card">
+            <div
+              class="project-card"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <div class="project-img-box">
                 <img src="img/kelsiorganics.com_ (1).webp" />
               </div>
@@ -233,7 +284,11 @@
                 ></span>
               </a>
             </div>
-            <div class="project-card">
+            <div
+              class="project-card"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <div class="project-img-box box-4">
                 <img src="img/ux-ui.png" />
               </div>
@@ -275,7 +330,12 @@
             <img src="img/main-slider-shape-1.png" alt="image shapes" />
           </div>
           <div class="testimonial-container">
-            <div class="testimonials-card">
+            <div
+              class="testimonials-card"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
               <span class="testimoanials-next"
                 ><i class="fa fa-chevron-right" aria-hidden="true"></i
               ></span>
@@ -283,10 +343,10 @@
                 ><i class="fa fa-chevron-left" aria-hidden="true"></i
               ></span>
               <p class="testimonials-text">
-                The UI/UX improvements they made to our app were game-changing.
-                It's now much more intuitive and engaging for our users. Working
-                with them was a breeze, and we couldn't be happier with the
-                outcome
+                > The UI/UX improvements they made to our app were
+                game-changing. It's now much more intuitive and engaging for our
+                users. Working with them was a breeze, and we couldn't be
+                happier with the outcome
               </p>
               <div class="tesimonials-author">
                 <img
@@ -319,7 +379,11 @@
       </section>
 
       <section class="section-cta">
-        <div class="container text-center">
+        <div
+          class="container text-center"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-center"
+        >
           <span class="subheading-1">Let's Get Started Now</span>
           <h3 class="heading-cta text-center">
             We'll Help You Overcome <br />
@@ -333,7 +397,12 @@
     <footer>
       <div class="container">
         <div class="grid grid-3--col grid-start-align mb-big">
-          <div class="footer-logo">
+          <div
+            class="footer-logo"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-center"
+            data-aos-duration="1000"
+          >
             <p class="logo">NovaBloom</p>
             <p class="footer-text">
               At NovaBloom, We don't just Create Digital Products we make
@@ -342,7 +411,12 @@
             <p class="cta-text">Get a Quote</p>
             <a class="footer-tel" href="tel:0000000000">+91 12345 67809</a>
           </div>
-          <div class="footer-quick-links">
+          <div
+            class="footer-quick-links"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-center"
+            data-aos-duration="1000"
+          >
             <h4 class="footer-title">Quick Links</h4>
             <ul class="footer-links">
               <li><a href="#" class="footer-link">Home</a></li>
@@ -352,7 +426,12 @@
               <li><a href="#" class="footer-link">Testimonials</a></li>
             </ul>
           </div>
-          <div class="footer-form">
+          <div
+            class="footer-form"
+            data-aos="fade-left"
+            data-aos-anchor-placement="center-center"
+            data-aos-duration="1000"
+          >
             <h4 class="footer-title">Get in touch with us</h4>
             <form class="form">
               <div class="input-form">
@@ -437,5 +516,11 @@
     <!--typed js-->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="/main.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
